@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<!DOCTYPE app-config>
+<app-config>
+	<request-info>
+		<path>Index</path>
+		<bean-class>
+			com.lara.client.login.LoginBean
+		</bean-class>
+		<action-class>
+			com.lara.client.login.LoginAction
+		</action-class>
+		<forward name="success">
+			Template/template.jsp
+		</forward>
+		<forward name="failure">
+			login.jsp
+		</forward>
+	</request-info>
+	<request-info>
+		<path>addService</path>
+		<bean-class>
+			com.lara.client.Service.ServiceBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Service.AddService
+		</action-class>
+		<forward name="success">
+			success.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>
+	<request-info>
+		<path>serviceEnquiry</path>
+		<bean-class>
+			com.lara.client.Service.ServiceBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Service.ServiceEnquiry
+		</action-class>
+		<forward name="success">
+			Service/searchResult.jsp
+		</forward>
+		<forward name="failure">
+			success.jsp
+		</forward>
+	</request-info>
+	<request-info>
+		<path>deleteService</path>
+		<bean-class>
+			com.lara.client.Service.ServiceBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Service.DeleteService
+		</action-class>
+		<forward name="success">
+			Service/searchResult.jsp
+		</forward>
+		<forward name="failure">
+			Service/searchResult.jsp
+		</forward>
+	</request-info>		
+	<request-info>
+		<path>viewService</path>
+		<bean-class>
+			com.lara.client.Service.ServiceBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Service.ViewService
+		</action-class>
+		<forward name="success">
+			Service/viewService.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>	
+	<request-info>
+		<path>getService</path>
+		<bean-class>
+			com.lara.client.Service.ServiceBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Service.ViewService
+		</action-class>
+		<forward name="success">
+			Service/editService.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>	
+	<request-info>
+		<path>editService</path>
+		<bean-class>
+			com.lara.client.Service.ServiceBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Service.AddService
+		</action-class>
+		<forward name="success">
+			success.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>	
+	<request-info>
+		<path>fillCombo</path>
+		<bean-class>
+			com.lara.client.Person.PersonBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Person.FillCombo
+		</action-class>
+		<forward name="success">
+			Person/addPerson.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>	
+	<request-info>
+		<path>addPerson</path>
+		<bean-class>
+			com.lara.client.Person.PersonBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Person.AddPerson
+		</action-class>
+		<forward name="success">
+			success.jsp
+		</forward>
+		<forward name="failure">
+			success.jsp
+		</forward>
+	</request-info>
+	<request-info>
+		<path>personEnquiry</path>
+		<bean-class>
+			com.lara.client.Person.PersonBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Person.PersonEnquiry
+		</action-class>
+		<forward name="success">
+			Person/searchResult.jsp
+		</forward>
+		<forward name="failure">
+			success.jsp
+		</forward>
+	</request-info>
+	<request-info>
+		<path>deletePerson</path>
+		<bean-class>
+			com.lara.client.Person.PersonBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Person.DeletePerson
+		</action-class>
+		<forward name="success">
+			Person/searchResult.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>		
+	<request-info>
+		<path>viewPerson</path>
+		<bean-class>
+			com.lara.client.Person.PersonBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Person.ViewPerson
+		</action-class>
+		<forward name="success">
+			Person/viewPerson.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>	
+	<request-info>
+		<path>getPerson</path>
+		<bean-class>
+			com.lara.client.Person.PersonBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Person.ViewPerson
+		</action-class>
+		<forward name="success">
+			Person/editPerson.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>	
+	<request-info>
+		<path>editPerson</path>
+		<bean-class>
+			com.lara.client.Person.PersonBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Person.AddPerson
+		</action-class>
+		<forward name="success">
+			success.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>	
+	<request-info>
+		<path>serviceWiseReport</path>
+		<bean-class>
+			com.lara.client.Service.ServiceBean
+		</bean-class>
+		<action-class>
+			com.lara.client.report.ServiceWise
+		</action-class>
+		<forward name="success">
+			Report/serviceData.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>	
+	<request-info>
+		<path>panchayatWiseReport</path>
+		<bean-class>
+		com.lara.client.Service.ServiceBean
+		</bean-class>
+		<action-class>
+			com.lara.client.report.PanchayatWise
+		</action-class>
+		<forward name="success">
+			Report/panchayatData.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>	
+	<request-info>
+		<path>villageWiseReport</path>
+		<bean-class>
+		com.lara.client.Service.ServiceBean
+		</bean-class>
+		<action-class>
+			com.lara.client.report.VillageWise
+		</action-class>
+		<forward name="success">
+			Report/villageData.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>	
+	<request-info>
+		<path>personWiseReport</path>
+		<bean-class>
+		com.lara.client.Service.ServiceBean
+		</bean-class>
+		<action-class>
+			com.lara.client.report.PersonWise
+		</action-class>
+		<forward name="success">
+			Report/personData.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>	
+	<request-info>
+		<path>listPerson</path>
+		<bean-class>
+		com.lara.client.Person.PersonBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Person.ListPerson
+		</action-class>
+		<forward name="success">
+			Person/list.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>	
+	<request-info>
+		<path>listServices</path>
+		<bean-class>
+		com.lara.client.Service.ServiceBean
+		</bean-class>
+		<action-class>
+			com.lara.client.Service.ListService
+		</action-class>
+		<forward name="success">
+			Service/list.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>	
+	<request-info>
+		<path>changePassword</path>
+		<bean-class>
+		com.lara.client.account.ChangePasswordBean
+		</bean-class>
+		<action-class>
+			com.lara.client.account.ChangePasswordAction
+		</action-class>
+		<forward name="success">
+			success.jsp
+		</forward>
+		<forward name="failure">
+			failure.jsp
+		</forward>
+	</request-info>	
+</app-config>

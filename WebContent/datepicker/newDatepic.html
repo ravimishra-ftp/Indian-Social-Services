@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script language="javascript" src="jquery.js" type="text/javascript"></script>
+<script type="text/javascript" language="javascript" src="ui.datepicker.js"></script>
+<link href="ui.datepicker.css" rel="stylesheet"  type="text/css"/>
+<script type="text/javascript">
+$(document).ready(function() { 
+	date_pick();
+});
+function date_pick(){
+	$('#show_date').datepick({dateFormat:'dd-mm-yy'});
+}
+</script>
+</head>
+
+<body>
+<div style="width:500px; margin:0px auto">
+<input type="text" name="show_date" id="show_date" value="" /><br />
+<select name="name">
+<option>value</option>
+<option>value</option>
+<option>value</option>
+<option>value</option>
+<option>value</option>
+</select>
+</div>
+</body>
+</html>
